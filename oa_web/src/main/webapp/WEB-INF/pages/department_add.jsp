@@ -24,7 +24,7 @@
                         <div class="section row">
                             <div class="col-md-6">
                                 <label for="sn" class="field prepend-icon">
-                                    <form:input path="sn" cssClass="gui-input" placeholder="编号..." type="text" value=""/>
+                                    <form:input path="sn" cssClass="gui-input" placeholder="编号..." type="text"/>
                                     <label for="sn" class="field-icon">
                                         <i class="fa fa-user"></i>
                                     </label>
@@ -32,7 +32,7 @@
                             </div>
                             <div class="col-md-6">
                                 <label for="name" class="field prepend-icon">
-                                    <form:input path="name" cssClass="gui-input" placeholder="名称..." type="text" value=""/>
+                                    <form:input path="name" cssClass="gui-input" placeholder="名称..." type="text"/>
                                     <label for="name" class="field-icon">
                                         <i class="fa fa-user"></i>
                                     </label>
@@ -41,7 +41,7 @@
                         </div>
                         <div class="section">
                             <label for="address" class="field prepend-icon">
-                                <form:input path="address" cssClass="gui-input" placeholder="地址..." type="text" value=""/>
+                                <form:input path="address" cssClass="gui-input" placeholder="地址..." type="text"/>
                                 <label for="address" class="field-icon">
                                     <i class="fa fa-lock"></i>
                                 </label>

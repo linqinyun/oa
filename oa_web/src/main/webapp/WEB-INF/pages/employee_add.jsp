@@ -16,7 +16,7 @@
         </div>
         <div class="admin-form theme-primary mw1000 center-block" style="padding-bottom: 175px;">
             <div class="panel heading-border">
-                <form:form action="/department/add" modelAttribute="department" id="admin-form" name="addForm">
+                <form:form action="/employee/add" modelAttribute="employee" id="admin-form" name="addForm">
                     <div class="panel-body bg-light">
                         <div class="section-divider mt20 mb40">
                             <span> 基本信息 </span>
@@ -24,7 +24,7 @@
                         <div class="section row">
                             <div class="col-md-6">
                                 <label for="sn" class="field prepend-icon">
-                                    <form:input path="sn" cssClass="gui-input" placeholder="编号..." type="text"/>
+                                    <form:input path="sn" cssClass="gui-input" placeholder="工号..." type="text"/>
                                     <label for="sn" class="field-icon">
                                         <i class="fa fa-user"></i>
                                     </label>
@@ -32,7 +32,7 @@
                             </div>
                             <div class="col-md-6">
                                 <label for="name" class="field prepend-icon">
-                                    <form:input path="name" cssClass="gui-input" placeholder="名称..." type="text"/>
+                                    <form:input path="name" cssClass="gui-input" placeholder="姓名..." type="text"/>
                                     <label for="name" class="field-icon">
                                         <i class="fa fa-user"></i>
                                     </label>
@@ -40,9 +40,17 @@
                             </div>
                         </div>
                         <div class="section">
-                            <label for="address" class="field prepend-icon">
-                                <form:input path="address" cssClass="gui-input" placeholder="地址..." type="text"/>
-                                <label for="address" class="field-icon">
+                            <label for="departmentSn" class="field prepend-icon">
+                                <form:select path="departmentSn" items="${dlist}" itemLabel="name" itemValue="sn" cssClass="gui-input" placeholder="所属部门..." type="text"/>
+                                <label for="departmentSn" class="field-icon">
+                                    <i class="fa fa-lock"></i>
+                                </label>
+                            </label>
+                        </div>
+                        <div class="section">
+                            <label for="post" class="field prepend-icon">
+                                <form:select path="post" items="${plist}" cssClass="gui-input" placeholder="所属部门..." type="text"/>
+                                <label for="post" class="field-icon">
                                     <i class="fa fa-lock"></i>
                                 </label>
                             </label>
