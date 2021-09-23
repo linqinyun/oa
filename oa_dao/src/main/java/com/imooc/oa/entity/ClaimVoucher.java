@@ -11,6 +11,25 @@ public class ClaimVoucher {
     private Double totalAmount;
     private String status;
 
+    private Employee creater;
+    private Employee dealer;
+
+    public Employee getCreater() {
+        return creater;
+    }
+
+    public void setCreater(Employee creater) {
+        this.creater = creater;
+    }
+
+    public Employee getDealer() {
+        return dealer;
+    }
+
+    public void setDealer(Employee dealer) {
+        this.dealer = dealer;
+    }
+
     public Integer getId() {
         return id;
     }
