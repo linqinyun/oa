@@ -1,11 +1,14 @@
 package com.imooc.oa.entity;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.util.Date;
 
 public class ClaimVoucher {
     private Integer id;
     private String cause;
     private String createSn;
+    @DateTimeFormat(pattern = "yyyy-MM-dd hh:mm")
     private Date createTime;
     private String nextDealSn;
     private Double totalAmount;
