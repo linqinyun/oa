@@ -38,5 +38,15 @@
         select * from employee
     </select>
 
+    <select id="selectByDepartmentAndPost" resultMap="employee">
+        select * from employee where sn is not null
+        <if test="dsn!=null">
+            and department_sn=#{dsn}
+        </if>
+        <if test="post!=null">
+            and post=#{post}
+        </if>
+    </select>
+
 
 </mapper>

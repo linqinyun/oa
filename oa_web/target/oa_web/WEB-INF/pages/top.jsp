@@ -66,7 +66,7 @@
                             <img src="/assets/img/avatars/3.jpg" class="img-responsive">
                         </a>
                         <div class="media-body">
-                            <div class="media-author">刘备--总经理</div>
+                            <div class="media-author">${sessionScope.employee.name}--${sessionScope.employee.post}</div>
                             <div class="media-links">
                                 <a href="/quit">退出</a>
                             </div>

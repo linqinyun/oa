@@ -29,7 +29,7 @@
     </insert>
     
     <update id="update" parameterType="ClaimVoucher">
-        update claim_voucher set cause=#{cause},create_sn=#{createSn},create_time=#{create_time},next_deal_sn=#{next_deal_sn},total_amount=#{total_amount},status=#{status} where id=#{id}
+        update claim_voucher set cause=#{cause},create_sn=#{createSn},next_deal_sn=#{nextDealSn},total_amount=#{totalAmount},status=#{status} where id=#{id}
     </update>
 
     <delete id="delete" parameterType="Integer">
